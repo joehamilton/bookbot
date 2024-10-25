@@ -2,15 +2,15 @@ def main() :
     with open("books/frankenstein.txt") as f:
         file_contents = f.read()
         print(splitToWords(file_contents))
-        wordOccourances = occourances(file_contents.split())
+        wordOccorrences = occorrences(file_contents.split())
         
-        for key, value in wordOccourances.items() :
+        for key, value in wordOccorrences.items() :
             print(f"{key} was found {value} times.")
 
 def splitToWords(s) :
     return len(s.split())
 
-def occourances(w) :
+def occorrences(w) :
     wordDictionary = {}
     for word in w:
         word = word.lower()
